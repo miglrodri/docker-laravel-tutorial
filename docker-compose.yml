@@ -38,6 +38,7 @@ services:
         ports:
             - 8080:80
         volumes:
+            - ./:/var/www/html
             - "./image/nginx/default.conf:/etc/nginx/conf.d/default.conf"
         links:
             - app
